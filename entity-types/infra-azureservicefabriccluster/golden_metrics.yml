@@ -1,0 +1,27 @@
+activeNodes:
+  title: Active nodes
+  unit: COUNT
+  queries:
+    azure:
+      select: average(azure.servicefabric.clusters.ActiveNodes)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+upgradeSystemServiceHealthDuration:
+  title: Upgrade system service health check duration (s)
+  unit: SECONDS
+  queries:
+    azure:
+      select: average(azure.servicefabric.clusters.UpgradeSystemServiceHealthCheckDurationInSeconds)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+serviceCreationRate:
+  title: Service creation rate
+  unit: COUNT
+  queries:
+    azure:
+      select: sum(azure.servicefabric.clusters.ServiceCreationRate)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
