@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: Azure account
+  unit: STRING
+activeNodes:
+  goldenMetric: activeNodes
+  unit: COUNT
+  title: Active nodes
+serviceCreationRate:
+  goldenMetric: serviceCreationRate
+  unit: COUNT
+  title: Service creation rate
+upgradeSystemServiceHealthDuration:
+  goldenMetric: upgradeSystemServiceHealthDuration
+  unit: SECONDS
+  title: Upgrade system service health check duration
