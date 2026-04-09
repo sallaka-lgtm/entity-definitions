@@ -1,0 +1,36 @@
+totalIops:
+  title: Total IOPS
+  unit: OPERATIONS_PER_SECOND
+  queries:
+    azure:
+      select: average(azure.elasticsan.elasticsans.TotalIops)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+totalMBps:
+  title: Total throughput (MB/s)
+  unit: BYTES_PER_SECOND
+  queries:
+    azure:
+      select: average(azure.elasticsan.elasticsans.TotalMBps)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+totalVolumeSizeGiB:
+  title: Total provisioned volume size (GiB)
+  unit: BYTES
+  queries:
+    azure:
+      select: average(azure.elasticsan.elasticsans.TotalVolumeSizeGiB)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+volumeGroupCount:
+  title: Volume group count
+  unit: COUNT
+  queries:
+    azure:
+      select: average(azure.elasticsan.elasticsans.VolumeGroupCount)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name

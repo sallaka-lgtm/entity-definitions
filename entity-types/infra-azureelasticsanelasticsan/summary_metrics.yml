@@ -1,0 +1,21 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: Azure account
+  unit: STRING
+totalIops:
+  goldenMetric: totalIops
+  unit: OPERATIONS_PER_SECOND
+  title: Total IOPS
+totalMBps:
+  goldenMetric: totalMBps
+  unit: BYTES_PER_SECOND
+  title: Total throughput
+totalVolumeSizeGiB:
+  goldenMetric: totalVolumeSizeGiB
+  unit: BYTES
+  title: Total volume size
+volumeGroupCount:
+  goldenMetric: volumeGroupCount
+  unit: COUNT
+  title: Volume group count
